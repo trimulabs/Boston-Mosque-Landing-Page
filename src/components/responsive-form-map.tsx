@@ -19,11 +19,11 @@ import { useMediaQuery } from "@chakra-ui/react";
 import FormWithMap from "./form-with-map";
 
 export default function ResponsiveFormMap() {
-  const [isLargerThan1100] = useMediaQuery("(min-width: 1100px)");
+  const [isLargerThan1200] = useMediaQuery("(min-width: 1200px)");
   const [isLargerThan700] = useMediaQuery("(min-width: 700px)");
   return (
     <Box id="form-with-map">
-      {isLargerThan1100 ? (
+      {isLargerThan1200 ? (
         <FormWithMap />
       ) : (
         <Box bgColor={"#38A169"} color={"white"}>

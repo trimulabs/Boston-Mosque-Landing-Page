@@ -36,8 +36,10 @@ const ImageWithParagraph: React.FC<ImageWithParagraphProps> = ({
           color="#525252"
           textAlign="left"
         >
-          <Heading>{headingText}</Heading>
-          <Text fontSize={20}>{paragraphText}</Text>
+          <Heading paddingLeft={65}>{headingText}</Heading>
+          <Text fontSize={20} paddingLeft={65} mt={30}>
+            {paragraphText}
+          </Text>
         </Box>
       )}
       <Image
@@ -57,9 +59,12 @@ const ImageWithParagraph: React.FC<ImageWithParagraphProps> = ({
           backgroundColor="rgba(0.0)"
           color="#525252"
           textAlign="left"
+          paddingRight={40}
         >
-          <Heading>{headingText}</Heading>
-          <Text fontSize={18}>{paragraphText}</Text>
+          <Heading paddingLeft={40}>{headingText}</Heading>
+          <Text fontSize={18} paddingLeft={40}>
+            {paragraphText}
+          </Text>
         </Box>
       )}
     </Flex>

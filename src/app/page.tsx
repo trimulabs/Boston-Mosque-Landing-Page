@@ -16,8 +16,7 @@ import Footer from "@/components/footer";
 import ResponsiveFormMap from "@/components/responsive-form-map";
 import Prayer from "@/components/text-with-kaba";
 import tomb from "../../public/images/light_background.png";
-import Tester2 from "@/components/cards2";
-import Tester3 from "@/components/cards3";
+
 import Tester5 from "@/components/responsive-cards";
 
 import { Box, Card, Center, Stack } from "@chakra-ui/react";
@@ -30,7 +29,8 @@ import { useMediaQuery } from "@chakra-ui/react";
 import ImageWithParagraph from "@/components/text-with-kaba";
 import ImageWithText from "@/components/bg-with-text";
 import ResponsiveCardLayout from "@/components/namaz-cards";
-import ResponsiveServiceCardLayout from "@/components/cards-for-services";
+
+import MapCards from "@/components/map-cards";
 
 import kabbaimg from "../../public/images/Khana_Khaba.svg";
 export default function Home() {
@@ -61,14 +61,7 @@ export default function Home() {
       <PrayerTime />
       <Services />
 
-      {isLargerThan1200 ? (
-        <Box>
-          <Tester3 />
-          <Tester2 />
-        </Box>
-      ) : (
-        <Tester5 />
-      )}
+      <MapCards />
 
       <Tomb imageUrl={tomb.src} imageAlt="tomb" />
       <ResponsiveFormMap />

@@ -64,33 +64,38 @@ export default function ExtraDetails() {
               Subscribe to our Newsletter
             </Text>
             <Stack direction={"row"} spacing={-8} mt={12}>
-              <FormControl id="email" fontSize={20} mt={10}>
-                <Input
-                  type="email"
-                  fontSize={16}
-                  border={"#38A169"}
-                  textDecor={"mintcream"}
-                  textColor={"white"}
-                  placeholder={"Enter your Email"}
-                  bgColor={"#38A169"}
-                  height={45}
-                  borderRadius={5}
-                  width={200}
-                />
-              </FormControl>
-              <Button
-                marginTop={90}
-                border={"none"}
-                variant={"solid"}
-                color="#4A5568"
-                bgColor={"#EDF2F7"}
-                fontSize={18}
-                borderRadius={6}
-                width={120}
-                height={50}
-              >
-                Subscribe
-              </Button>
+              <Box>
+                <FormControl id="email" fontSize={20} mt={10}>
+                  <Input
+                    type="email"
+                    fontSize={16}
+                    border={"#38A169"}
+                    textDecor={"mintcream"}
+                    textColor={"white"}
+                    placeholder={"  Eneter your email"}
+                    _placeholder={{ color: "white" }}
+                    bgColor={"#38A169"}
+                    height={45}
+                    borderRadius={5}
+                    width={200}
+                  />
+                </FormControl>
+              </Box>
+              <Box>
+                <Button
+                  marginTop={13}
+                  border={"none"}
+                  variant={"solid"}
+                  color="#4A5568"
+                  bgColor={"#EDF2F7"}
+                  fontSize={18}
+                  borderRadius={6}
+                  width={120}
+                  height={40}
+                >
+                  Subscribe
+                </Button>
+              </Box>
             </Stack>
             <Stack direction={"row"} spacing={25} mt={40}>
               <FaFacebook color={"#38A169"} size={"28"} />
@@ -239,34 +244,39 @@ export default function ExtraDetails() {
               Subscribe to our Newsletter
             </Text>
             <Stack direction={"row"} spacing={-8}>
-              <FormControl id="email" fontSize={20} mt={10}>
-                <Input
-                  type="email"
-                  placeholder={"eneter your email"}
-                  color={"white"}
-                  textColor={"white"}
-                  bgColor={"#38A169"}
-                  height={45}
-                  borderRadius={5}
-                  fontSize={16}
-                  border={"#38A169"}
-                  textDecor={"mintcream"}
-                  width={200}
-                />
-              </FormControl>
-              <Button
-                border={"none"}
-                variant={"solid"}
-                fontSize={18}
-                marginTop={90}
-                color="#4A5568"
-                bgColor={"#EDF2F7"}
-                borderRadius={6}
-                width={120}
-                height={50}
-              >
-                Subscribe
-              </Button>
+              <Box>
+                <FormControl id="email" fontSize={20} mt={10}>
+                  <Input
+                    type="email"
+                    placeholder={"  Enter your email"}
+                    _placeholder={{ color: "white" }}
+                    color={"white"}
+                    textColor={"white"}
+                    bgColor={"#38A169"}
+                    height={45}
+                    borderRadius={5}
+                    fontSize={16}
+                    border={"#38A169"}
+                    textDecor={"mintcream"}
+                    width={200}
+                  />
+                </FormControl>
+              </Box>
+              <Box>
+                <Button
+                  border={"none"}
+                  variant={"solid"}
+                  fontSize={18}
+                  marginTop={13}
+                  color="#4A5568"
+                  bgColor={"#EDF2F7"}
+                  borderRadius={6}
+                  width={120}
+                  height={40}
+                >
+                  Subscribe
+                </Button>
+              </Box>
             </Stack>
             <Stack direction={"row"} spacing={25} mt={20}>
               <FaFacebook color={"#38A169"} size={"28"} />

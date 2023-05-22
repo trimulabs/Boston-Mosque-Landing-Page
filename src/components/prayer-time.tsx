@@ -37,13 +37,13 @@ const PrayerTime = () => {
   return (
     <Box bgColor={"#38A169"} color={"white"} id="prayer-times">
       <Box paddingTop={80}>
-        <Heading fontFamily={"Cinzel"} paddingLeft={100} fontSize={30}>
+        <Heading fontFamily={"Cinzel"} paddingLeft={80} fontSize={30}>
           {" "}
           PRAYER TIME
         </Heading>
         <Text
           textAlign={"left"}
-          paddingLeft={100}
+          paddingLeft={80}
           paddingRight={100}
           paddingTop={30}
           fontSize={20}
@@ -69,7 +69,9 @@ const PrayerTime = () => {
       </Center>
       <Box paddingBottom={30}>
         {isLargerThan1000 ? (
-          <ResponsiveCardLayout />
+          <Box mx={20}>
+            <ResponsiveCardLayout />
+          </Box>
         ) : (
           <Center>
             <ResponsiveCardLayout />

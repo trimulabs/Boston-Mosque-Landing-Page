@@ -52,7 +52,7 @@ export default function Services() {
     <Box minHeight={400}>
       <Heading
         fontFamily={"Cinzel"}
-        paddingLeft={100}
+        paddingLeft={70}
         paddingTop={80}
         fontSize={30}
         color={"#4A5568"}
@@ -62,7 +62,7 @@ export default function Services() {
       </Heading>
       <Text
         textAlign={"left"}
-        paddingLeft={60}
+        paddingLeft={70}
         paddingRight={60}
         paddingTop={30}
         fontSize={20}
