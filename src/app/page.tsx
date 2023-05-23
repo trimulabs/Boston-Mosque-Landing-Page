@@ -34,44 +34,44 @@ import MapCards from "@/components/map-cards";
 
 import kabbaimg from "../../public/images/Khana_Khaba.svg";
 export default function Home() {
-  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
-  const [isLargerThan1000] = useMediaQuery("(min-width: 1000px)");
-  const [isLargerThan1378] = useMediaQuery("(min-width: 1378px)");
-  const [isLargerThan1200] = useMediaQuery("(min-width: 1200px)");
+    const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
+    const [isLargerThan1000] = useMediaQuery("(min-width: 1000px)");
+    const [isLargerThan1378] = useMediaQuery("(min-width: 1378px)");
+    const [isLargerThan1200] = useMediaQuery("(min-width: 1200px)");
 
-  return (
-    <div>
-      <NavBar2 />
-      <ImageWithText
-        text="The mosque is the place where we feel the presence of Allah, and where we find peace."
-        imageAlt="background image"
-        headingText="CALL UPON ME, I'LL RESPOND TO YOU"
-      />
-      <ImageWithParagraph
-        imagePath={kabbaimg.src}
-        imageAlt="Description of the image"
-        headingText=" WELCOME TO OUR ISLAMIC CENTRE"
-        paragraphText="Corem Ipsum is simply dummy text of the printing and typesetting
+    return (
+        <div>
+            <NavBar2 />
+            <ImageWithText
+                text="The mosque is the place where we feel the presence of Allah, and where we find peace."
+                imageAlt="background image"
+                headingText="CALL UPON ME, I'LL RESPOND TO YOU"
+            />
+            <ImageWithParagraph
+                imagePath={kabbaimg.src}
+                imageAlt="Description of the image"
+                headingText=" WELCOME TO OUR ISLAMIC CENTRE"
+                paragraphText="Corem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text
         ever since the 1500s, when an unknown printer took a galley of
         type and scrambled it to make a type specimen book. It has
         survived not only five centuries, but also the leap into
         electronic typesetting, remaining essentially unchanged."
-      />
-      <PrayerTime />
-      <Services />
+            />
+            <PrayerTime />
+            <Services />
 
-      <MapCards />
+            <MapCards />
 
-      <Tomb imageUrl={tomb.src} imageAlt="tomb" />
-      <ResponsiveFormMap />
-      {isLargerThan1000 ? (
-        <ExtraDetails />
-      ) : (
-        <Center>
-          <ExtraDetails />
-        </Center>
-      )}
-    </div>
-  );
+            <Tomb imageUrl={tomb.src} imageAlt="tomb" />
+            <ResponsiveFormMap />
+            {isLargerThan1000 ? (
+                <ExtraDetails />
+            ) : (
+                <Center>
+                    <ExtraDetails />
+                </Center>
+            )}
+        </div>
+    );
 }
