@@ -1,34 +1,7 @@
 import { useState } from "react";
-import {
-    Box,
-    Flex,
-    IconButton,
-    useDisclosure,
-    useBreakpointValue,
-    Collapse,
-    Text,
-    Button,
-    Stack,
-    Link,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Stack, Link } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { CloseIcon } from "@chakra-ui/icons";
 import { useMediaQuery } from "@chakra-ui/react";
-
-import Cards from "../components/cards";
-import Backpic from "@/components/bg-text";
-import Islam from "@/components/islamicCenter";
-import Islam2 from "@/components/IslamicCenterResponsive";
-import Navbar from "@/components/NavBar";
-import ExtraDetails from "@/components/extra-details";
-import ServiceCards from "@/components/services-cards";
-import DetailsButton from "@/components/detail-button";
-import PrayerTime from "@/components/prayer-time";
-import Services from "@/components/services-we-offer";
-import Tomb from "@/components/tomb";
-import FormWithMap from "@/components/form-with-map";
-import Footer from "@/components/footer";
-import ResponsiveFormMap from "@/components/responsive-form-map";
 
 export default function NavBar2() {
     const [isLargerThan1000] = useMediaQuery("(min-width: 1000px)");

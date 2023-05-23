@@ -23,7 +23,6 @@ import { Box, Card, Center, Stack } from "@chakra-ui/react";
 import { Heading } from "@chakra-ui/react";
 import icons from "@chakra-ui/icons";
 import ExtraDetails from "@/components/extra-details";
-import ServiceCards from "@/components/services-cards";
 import DetailsButton from "@/components/detail-button";
 import { useMediaQuery } from "@chakra-ui/react";
 import ImageWithParagraph from "@/components/text-with-kaba";
