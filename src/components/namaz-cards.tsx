@@ -44,39 +44,20 @@ const ResponsiveCardLayout: React.FC = () => {
     const [isLargerThan1200] = useMediaQuery("(min-width: 1200px)");
     const [data, setData] = useState<Response | null>(null);
 
-    let currentDate = new Date();
-    const day = String(currentDate.getDate()).padStart(2, "0");
-    const month = String(currentDate.getMonth() + 1).padStart(2, "0");
-    const year = String(currentDate.getFullYear());
-    const formattedDate = `${day}-${month}-${year}`;
-    console.log("formattedDate", formattedDate);
-
-    const storedDate = localStorage.getItem("currentDate");
-    if (formattedDate && formattedDate !== storedDate) {
-        localStorage.setItem("currentDate", formattedDate);
-    }
-    let url = `http://api.aladhan.com/v1/timingsByAddress/${
-        sessionStorage.getItem("currentDate") || new Date().toISOString()
-    }?address=451%20Short%20St,%20South%20Boston,%20VA%2024592,%20United%20States`;
+    let url = `http://api.aladhan.com/v1/timingsByAddress/${new Date().toISOString()}?address=451%20Short%20St,%20South%20Boston,%20VA%2024592,%20United%20States`;
 
     useEffect(() => {
         const checkDate = async () => {
-            if (formattedDate && formattedDate !== storedDate) {
-                localStorage.setItem("currentDate", formattedDate);
-            }
             try {
                 const response = await fetch(url);
                 const jsondata = await response.json();
-                console.log(jsondata);
                 setData(jsondata);
             } catch (error) {
                 console.error("error, fetching the data", error);
             }
         };
         checkDate();
-        const interval = setInterval(checkDate, 86400000);
-        return () => clearInterval(interval);
-    }, [formattedDate]);
+    }, []);
 
     return (
         <Box width="100%" display="flex" justifyContent="center">
