@@ -44,7 +44,7 @@ const ResponsiveCardLayout: React.FC = () => {
     const [isLargerThan1200] = useMediaQuery("(min-width: 1200px)");
     const [data, setData] = useState<Response | null>(null);
 
-    let url = `http://api.aladhan.com/v1/timingsByAddress/${new Date().toISOString()}?address=451%20Short%20St,%20South%20Boston,%20VA%2024592,%20United%20States`;
+    let url = `https://api.aladhan.com/v1/timingsByAddress/${new Date().toISOString()}?address=451%20Short%20St,%20South%20Boston,%20VA%2024592,%20United%20States`;
 
     useEffect(() => {
         const checkDate = async () => {
